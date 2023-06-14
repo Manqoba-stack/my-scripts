@@ -5,7 +5,7 @@
 #Last modified: 10/06/23
 
 # Description
-# Creates a backup in ~/Documents folder of all files in the documents directory
+# Creates a backup in ~/Documents folder of all files in the current working directory
 
 # Usage:
 # backup_script 
