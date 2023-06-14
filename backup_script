@@ -10,5 +10,14 @@
 # Usage:
 # backup_script 
 
-tar -cvf ~/Documents/documents_backup_"$(date +%d-%m-%Y_%H-%M-%S)".tar ~/Documents/* 2>/dev/null
+echo "hello ${USER^}"
+echo "I will now backup-up your Documents directory, $HOME/Documents>"
+
+currentdir=$(pwd)
+
+echo "script is running in $currentdir , backup will be saved here"
+
+tar -cvf $currentdir/documents_backup_"$(date +%d-%m-%Y_%H-%M-%S)".tar $HOME/Documents/* 2>/dev/null
+
+echo "backup complete"
 exit 0
