@@ -21,3 +21,5 @@ tar -cvf $currentdir/documents_backup_"$(date +%d-%m-%Y_%H-%M-%S)".tar $HOME/Doc
 
 echo "backup complete"
 exit 0
+
+
